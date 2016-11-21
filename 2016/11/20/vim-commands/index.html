@@ -1,0 +1,314 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="GadyPu"><meta name="description" content="vim常用快捷键整理Vim是从vi发展出来的一个文本编辑器。代码补完、编译及错误跳转等方便编程的功能特别丰富，在程序员中被广泛使用。和Emacs并列成为类Unix系统用户最喜欢的编辑器。Vim的第一个版本由布莱姆·米勒在1991年发布。最初的简称是ViIMitation，随"><meta name="keywords" content="vim"><title>vim commands · GadyPu</title><link rel="icon" href="/favicon.ico"><link rel="canonical" href="/gadypu.top/2016/11/20/vim-commands/"><link rel="alternate" href="/atom.xml" title="GadyPu"><link rel="stylesheet" href="/fonts/iconfont/iconfont.css"><link rel="stylesheet" href="/css/style.css"><script type="text/javascript"><!-- hexo-inject:begin --><!-- hexo-inject:end -->var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?Your baidu Analytics ID";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'Your Google Analytics ID', 'auto');
+ga('send', 'pageview');</script><!-- hexo-inject:begin --><!-- hexo-inject:end --></head><body><div id="main"><header><a href="/." class="logo">GadyPu</a><ul class="nav"><li class="nav-link"><a href="/" target="_self">Home</a></li><li class="nav-link"><a href="/archives/" target="_self">Archives</a></li><li class="nav-link"><a href="/categories/" target="_self">Categories</a></li><li class="nav-link"><a href="/tags/" target="_self">Tags</a></li><li class="nav-link"><a href="/about/" target="_self">About</a></li></ul></header><section id="container"><article class="post"><h1 class="post-title">vim commands</h1><span class="post-time">2016年11月20日</span><div id="sidebar" class="post-sidebar"><h3 class="heading">Contents</h3><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#vim常用快捷键整理"><span class="toc-text">vim常用快捷键整理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#打开文件"><span class="toc-text">打开文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#游标移动"><span class="toc-text">游标移动</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-行间跳转"><span class="toc-text">1.行间跳转</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-行内跳转"><span class="toc-text">2.行内跳转</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#插入操作"><span class="toc-text">插入操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#删除与撤销"><span class="toc-text">删除与撤销</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#剪切、复制与粘贴"><span class="toc-text">剪切、复制与粘贴</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查找与替换"><span class="toc-text">查找与替换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#快速缩进"><span class="toc-text">快速缩进</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#保存操作"><span class="toc-text">保存操作</span></a></li></ol></li></ol></div><div class="post-content"><h1 id="vim常用快捷键整理"><a href="#vim常用快捷键整理" class="headerlink" title="vim常用快捷键整理"></a>vim常用快捷键整理</h1><hr>
+<!-- hexo-inject:begin --><!-- hexo-inject:end --><blockquote>
+<p><a href="https://zh.wikipedia.org/wiki/Vim" target="_blank" rel="external">Vim</a>是从vi发展出来的一个文本编辑器。代码补完、编译及错误跳转等方便编程的功能特别丰富，在程序员中被广泛使用。和Emacs并列成为类Unix系统用户最喜欢的编辑器。<br>Vim的第一个版本由布莱姆·米勒在1991年发布。最初的简称是Vi IMitation，随着功能的不断增加，正式名称改成了Vi IMproved。现在是在开放源代码方式下发行的自由软件。。</p>
+</blockquote>
+<hr>
+<blockquote>
+<p>vim功能实在是太强大了本文只收录自己常用的一些命令，以助忘记。</p>
+<p>vim常见有两种模式一种是Insert模式，该模式下可以像其它文本编辑器一样正常输入字符；<br>另一种是Normal模式，该模式下vim监听用户的按键可以对文本进行快速修改。<br>想要从Insert模式切换到Normal模式只需按下ESC键即可</p>
+</blockquote>
+<h2 id="打开文件"><a href="#打开文件" class="headerlink" title="打开文件"></a>打开文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vim test.txt</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<h2 id="游标移动"><a href="#游标移动" class="headerlink" title="游标移动"></a>游标移动</h2><h3 id="1-行间跳转"><a href="#1-行间跳转" class="headerlink" title="1.行间跳转"></a>1.行间跳转</h3><table>
+<thead>
+<tr>
+<th style="text-align:left">快捷键</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">$h， j， k， l$</td>
+<td style="text-align:center">光标左，下，上，右移动</td>
+</tr>
+<tr>
+<td style="text-align:left">$shift + g$</td>
+<td style="text-align:center">光标移动至文本尾行</td>
+</tr>
+<tr>
+<td style="text-align:left">$n + shift + g$ $or$ $nG$</td>
+<td style="text-align:center">光标移动至文本第$n$行</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-行内跳转"><a href="#2-行内跳转" class="headerlink" title="2.行内跳转"></a>2.行内跳转</h3><table>
+<thead>
+<tr>
+<th style="text-align:left">快捷键</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">$w$</td>
+<td style="text-align:center">移动到下一个单词首位</td>
+</tr>
+<tr>
+<td style="text-align:left">$b$</td>
+<td style="text-align:center">移动到上一个单词首位</td>
+</tr>
+<tr>
+<td style="text-align:left">$e$</td>
+<td style="text-align:center">光标移动至当前单词末位</td>
+</tr>
+<tr>
+<td style="text-align:left">$gg$</td>
+<td style="text-align:center">光标移动至文本首行</td>
+</tr>
+<tr>
+<td style="text-align:left">$0$或$\wedge$</td>
+<td style="text-align:center">到行头</td>
+</tr>
+<tr>
+<td style="text-align:left">$f$ $&lt;$字母$&gt;$</td>
+<td style="text-align:center">向后搜索$&lt;$字母$&gt;$并跳转到第一个匹配的位置</td>
+</tr>
+<tr>
+<td style="text-align:left">$F$ $&lt;$字母$&gt;$</td>
+<td style="text-align:center">向前搜索$&lt;$字母$&gt;$并跳转到第一个匹配的位置</td>
+</tr>
+</tbody>
+</table>
+<h2 id="插入操作"><a href="#插入操作" class="headerlink" title="插入操作"></a>插入操作</h2><table>
+<thead>
+<tr>
+<th style="text-align:left">快捷键</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">$i$</td>
+<td style="text-align:center">在当前光标处进行编辑</td>
+</tr>
+<tr>
+<td style="text-align:left">$I$</td>
+<td style="text-align:center">在行首插入</td>
+</tr>
+<tr>
+<td style="text-align:left">$A$</td>
+<td style="text-align:center">在行末插入</td>
+</tr>
+<tr>
+<td style="text-align:left">$a$</td>
+<td style="text-align:center">在光标后插入编辑</td>
+</tr>
+<tr>
+<td style="text-align:left">$o$</td>
+<td style="text-align:center">在当前行后插入一个新行</td>
+</tr>
+<tr>
+<td style="text-align:left">$O$</td>
+<td style="text-align:center">在当前行前插入一个新行</td>
+</tr>
+<tr>
+<td style="text-align:left">$cw$</td>
+<td style="text-align:center">替换从光标所在位置后到一个单词结尾的字符</td>
+</tr>
+</tbody>
+</table>
+<h2 id="删除与撤销"><a href="#删除与撤销" class="headerlink" title="删除与撤销"></a>删除与撤销</h2><table>
+<thead>
+<tr>
+<th style="text-align:left">快捷键</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">$x$</td>
+<td style="text-align:center">删除光标后的一个字符</td>
+</tr>
+<tr>
+<td style="text-align:left">$Shift + x$</td>
+<td style="text-align:center">删除光标前的一个字符</td>
+</tr>
+<tr>
+<td style="text-align:left">$dd$</td>
+<td style="text-align:center">删除光标所在整行，同时被删除内容存于剪贴板上</td>
+</tr>
+<tr>
+<td style="text-align:left">$de$</td>
+<td style="text-align:center">删除光标后的单词内容，同时被删除内容存于剪贴板上</td>
+</tr>
+<tr>
+<td style="text-align:left">$dw$</td>
+<td style="text-align:center">删除光标后的单词内容以及之后的空格，同时被删除内容存于剪贴板上</td>
+</tr>
+<tr>
+<td style="text-align:left">$d\$或D$</td>
+<td style="text-align:center">删除至行尾</td>
+</tr>
+<tr>
+<td style="text-align:left">$d^{\wedge{}}$</td>
+<td style="text-align:center">删除至行首</td>
+</tr>
+<tr>
+<td style="text-align:left">$dG$</td>
+<td style="text-align:center">删除到文档结尾处</td>
+</tr>
+<tr>
+<td style="text-align:left">$d1G$</td>
+<td style="text-align:center">删至文档首部</td>
+</tr>
+<tr>
+<td style="text-align:left">$ndd$</td>
+<td style="text-align:center">从光标所在行开始向下删除$n$行</td>
+</tr>
+<tr>
+<td style="text-align:left">$u$</td>
+<td style="text-align:center">还原上一个操作（不限于删除）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="剪切、复制与粘贴"><a href="#剪切、复制与粘贴" class="headerlink" title="剪切、复制与粘贴"></a>剪切、复制与粘贴</h2><table>
+<thead>
+<tr>
+<th style="text-align:left">快捷键</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">$v$</td>
+<td style="text-align:center">选定文本块，移动光标键选定内容</td>
+</tr>
+<tr>
+<td style="text-align:left">$y$</td>
+<td style="text-align:center">复制选定块</td>
+</tr>
+<tr>
+<td style="text-align:left">$yy$</td>
+<td style="text-align:center">复制光标所在整行</td>
+</tr>
+<tr>
+<td style="text-align:left">$d$</td>
+<td style="text-align:center">剪切选定块</td>
+</tr>
+<tr>
+<td style="text-align:left">$dd$</td>
+<td style="text-align:center">剪切光标所在整行</td>
+</tr>
+<tr>
+<td style="text-align:left">$p$</td>
+<td style="text-align:center">粘贴至光标下</td>
+</tr>
+<tr>
+<td style="text-align:left">$P$</td>
+<td style="text-align:center">粘贴至光标上</td>
+</tr>
+</tbody>
+</table>
+<h2 id="查找与替换"><a href="#查找与替换" class="headerlink" title="查找与替换"></a>查找与替换</h2><table>
+<thead>
+<tr>
+<th style="text-align:left">快捷键</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">$:/word$</td>
+<td style="text-align:center">全文查找word。 按下:实际上是进入了Vim的命令模式。查找操作支持正则表达式。</td>
+</tr>
+<tr>
+<td style="text-align:left">$r + p$</td>
+<td style="text-align:center">将光标之后的字符替换为字母$p$</td>
+</tr>
+<tr>
+<td style="text-align:left">$:s/word/replace$</td>
+<td style="text-align:center">光标所在行的第一个word替换为$replace$</td>
+</tr>
+<tr>
+<td style="text-align:left">$:\%s/from/to/$</td>
+<td style="text-align:center">全文查找from并替换为to</td>
+</tr>
+<tr>
+<td style="text-align:left">$:1,50s/from/to/$</td>
+<td style="text-align:center">在第1行和第50行之间（含）进行搜索和替换</td>
+</tr>
+</tbody>
+</table>
+<h2 id="快速缩进"><a href="#快速缩进" class="headerlink" title="快速缩进"></a>快速缩进</h2><blockquote>
+<ul>
+<li>普通模式下输入15G，跳转到15行</li>
+<li>普通模式下输入&gt;&gt; 整行将向右缩进（使用，用于格式化代码超爽）</li>
+<li>普通模式下输入&lt;&lt; 整行向左回退</li>
+</ul>
+</blockquote>
+<h2 id="保存操作"><a href="#保存操作" class="headerlink" title="保存操作"></a>保存操作</h2><table>
+<thead>
+<tr>
+<th style="text-align:left">快捷键</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">$:q!$</td>
+<td style="text-align:center">强制退出，不保存</td>
+</tr>
+<tr>
+<td style="text-align:left">$:q$</td>
+<td style="text-align:center">退出</td>
+</tr>
+<tr>
+<td style="text-align:left">$:wq!$</td>
+<td style="text-align:center">强制保存并退出</td>
+</tr>
+<tr>
+<td style="text-align:left">$:w &lt;文件路径&gt;    $</td>
+<td style="text-align:center">另存为</td>
+</tr>
+<tr>
+<td style="text-align:left">$:saveas &lt;文件路径&gt;$</td>
+<td style="text-align:center">另存为</td>
+</tr>
+<tr>
+<td style="text-align:left">$:x$</td>
+<td style="text-align:center">保存并退出</td>
+</tr>
+<tr>
+<td style="text-align:left">$:wq$</td>
+<td style="text-align:center">保存并退出</td>
+</tr>
+</tbody>
+</table>
+</div></article><div class="tags"><a href="/tags/vim/">vim</a></div><div class="paginator"><a href="/2016/11/19/hello-world/" class="next"><span>Next</span><i class="iconfont icon-right"></i></a></div><section id="comments"><div data-thread-key="gadypu.top/2016/11/20/vim-commands/index.html" data-title="vim commands" data-url="gadypu.top/2016/11/20/vim-commands/index.html" class="ds-thread"></div><script type="text/javascript">var duoshuoQuery = {short_name: "gadypu" };
+(function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();</script></section></section><footer><div class="social"><a href="mailto:gadypu@email.com" title="email" class="iconfont icon-email"></a><a href="https://github.com/GadyPu" title="github" class="iconfont icon-github"></a><a href="http://weibo.com/u/2560017732" title="weibo" class="iconfont icon-weibo"></a><a href="https://www.zhihu.com/people/GadyPu" title="zhihu" class="iconfont icon-zhihu"></a></div><div class="copyright"><p class="power">Powered by <a href="https://hexo.io/">Hexo</a> and Theme by <a href="https://github.com/ahonn/hexo-theme-even"> Even</a></p><p class="since">&copy;2016<span class="heart"><i class="iconfont icon-heart"></i></span><span class="author">GadyPu</span></p></div><div id="back2top"><i class="iconfont icon-up"></i></div></footer></div><script src="/js/zepto.min.js"></script><script src="/js/theme.js"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end --></body></html>

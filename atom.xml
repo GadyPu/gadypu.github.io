@@ -4,9 +4,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2016-11-19T02:33:54.902Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="gadypu.top/"/>
+  <updated>2016-11-20T13:05:44.596Z</updated>
+  <id>gadypu.top/</id>
   
   <author>
     <name>GadyPu</name>
@@ -16,14 +16,322 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>vim commands</title>
+    <link href="gadypu.top/2016/11/20/vim-commands/"/>
+    <id>gadypu.top/2016/11/20/vim-commands/</id>
+    <published>2016-11-20T11:44:01.000Z</published>
+    <updated>2016-11-20T13:05:44.596Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="vim常用快捷键整理"><a href="#vim常用快捷键整理" class="headerlink" title="vim常用快捷键整理"></a>vim常用快捷键整理</h1><hr>
+<blockquote>
+<p><a href="https://zh.wikipedia.org/wiki/Vim" target="_blank" rel="external">Vim</a>是从vi发展出来的一个文本编辑器。代码补完、编译及错误跳转等方便编程的功能特别丰富，在程序员中被广泛使用。和Emacs并列成为类Unix系统用户最喜欢的编辑器。<br>Vim的第一个版本由布莱姆·米勒在1991年发布。最初的简称是Vi IMitation，随着功能的不断增加，正式名称改成了Vi IMproved。现在是在开放源代码方式下发行的自由软件。。</p>
+</blockquote>
+<hr>
+<blockquote>
+<p>vim功能实在是太强大了本文只收录自己常用的一些命令，以助忘记。</p>
+<p>vim常见有两种模式一种是Insert模式，该模式下可以像其它文本编辑器一样正常输入字符；<br>另一种是Normal模式，该模式下vim监听用户的按键可以对文本进行快速修改。<br>想要从Insert模式切换到Normal模式只需按下ESC键即可</p>
+</blockquote>
+<h2 id="打开文件"><a href="#打开文件" class="headerlink" title="打开文件"></a>打开文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vim test.txt</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<h2 id="游标移动"><a href="#游标移动" class="headerlink" title="游标移动"></a>游标移动</h2><h3 id="1-行间跳转"><a href="#1-行间跳转" class="headerlink" title="1.行间跳转"></a>1.行间跳转</h3><table>
+<thead>
+<tr>
+<th style="text-align:left">快捷键</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">$h， j， k， l$</td>
+<td style="text-align:center">光标左，下，上，右移动</td>
+</tr>
+<tr>
+<td style="text-align:left">$shift + g$</td>
+<td style="text-align:center">光标移动至文本尾行</td>
+</tr>
+<tr>
+<td style="text-align:left">$n + shift + g$ $or$ $nG$</td>
+<td style="text-align:center">光标移动至文本第$n$行</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-行内跳转"><a href="#2-行内跳转" class="headerlink" title="2.行内跳转"></a>2.行内跳转</h3><table>
+<thead>
+<tr>
+<th style="text-align:left">快捷键</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">$w$</td>
+<td style="text-align:center">移动到下一个单词首位</td>
+</tr>
+<tr>
+<td style="text-align:left">$b$</td>
+<td style="text-align:center">移动到上一个单词首位</td>
+</tr>
+<tr>
+<td style="text-align:left">$e$</td>
+<td style="text-align:center">光标移动至当前单词末位</td>
+</tr>
+<tr>
+<td style="text-align:left">$gg$</td>
+<td style="text-align:center">光标移动至文本首行</td>
+</tr>
+<tr>
+<td style="text-align:left">$0$或$\wedge$</td>
+<td style="text-align:center">到行头</td>
+</tr>
+<tr>
+<td style="text-align:left">$f$ $&lt;$字母$&gt;$</td>
+<td style="text-align:center">向后搜索$&lt;$字母$&gt;$并跳转到第一个匹配的位置</td>
+</tr>
+<tr>
+<td style="text-align:left">$F$ $&lt;$字母$&gt;$</td>
+<td style="text-align:center">向前搜索$&lt;$字母$&gt;$并跳转到第一个匹配的位置</td>
+</tr>
+</tbody>
+</table>
+<h2 id="插入操作"><a href="#插入操作" class="headerlink" title="插入操作"></a>插入操作</h2><table>
+<thead>
+<tr>
+<th style="text-align:left">快捷键</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">$i$</td>
+<td style="text-align:center">在当前光标处进行编辑</td>
+</tr>
+<tr>
+<td style="text-align:left">$I$</td>
+<td style="text-align:center">在行首插入</td>
+</tr>
+<tr>
+<td style="text-align:left">$A$</td>
+<td style="text-align:center">在行末插入</td>
+</tr>
+<tr>
+<td style="text-align:left">$a$</td>
+<td style="text-align:center">在光标后插入编辑</td>
+</tr>
+<tr>
+<td style="text-align:left">$o$</td>
+<td style="text-align:center">在当前行后插入一个新行</td>
+</tr>
+<tr>
+<td style="text-align:left">$O$</td>
+<td style="text-align:center">在当前行前插入一个新行</td>
+</tr>
+<tr>
+<td style="text-align:left">$cw$</td>
+<td style="text-align:center">替换从光标所在位置后到一个单词结尾的字符</td>
+</tr>
+</tbody>
+</table>
+<h2 id="删除与撤销"><a href="#删除与撤销" class="headerlink" title="删除与撤销"></a>删除与撤销</h2><table>
+<thead>
+<tr>
+<th style="text-align:left">快捷键</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">$x$</td>
+<td style="text-align:center">删除光标后的一个字符</td>
+</tr>
+<tr>
+<td style="text-align:left">$Shift + x$</td>
+<td style="text-align:center">删除光标前的一个字符</td>
+</tr>
+<tr>
+<td style="text-align:left">$dd$</td>
+<td style="text-align:center">删除光标所在整行，同时被删除内容存于剪贴板上</td>
+</tr>
+<tr>
+<td style="text-align:left">$de$</td>
+<td style="text-align:center">删除光标后的单词内容，同时被删除内容存于剪贴板上</td>
+</tr>
+<tr>
+<td style="text-align:left">$dw$</td>
+<td style="text-align:center">删除光标后的单词内容以及之后的空格，同时被删除内容存于剪贴板上</td>
+</tr>
+<tr>
+<td style="text-align:left">$d\$或D$</td>
+<td style="text-align:center">删除至行尾</td>
+</tr>
+<tr>
+<td style="text-align:left">$d^{\wedge{}}$</td>
+<td style="text-align:center">删除至行首</td>
+</tr>
+<tr>
+<td style="text-align:left">$dG$</td>
+<td style="text-align:center">删除到文档结尾处</td>
+</tr>
+<tr>
+<td style="text-align:left">$d1G$</td>
+<td style="text-align:center">删至文档首部</td>
+</tr>
+<tr>
+<td style="text-align:left">$ndd$</td>
+<td style="text-align:center">从光标所在行开始向下删除$n$行</td>
+</tr>
+<tr>
+<td style="text-align:left">$u$</td>
+<td style="text-align:center">还原上一个操作（不限于删除）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="剪切、复制与粘贴"><a href="#剪切、复制与粘贴" class="headerlink" title="剪切、复制与粘贴"></a>剪切、复制与粘贴</h2><table>
+<thead>
+<tr>
+<th style="text-align:left">快捷键</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">$v$</td>
+<td style="text-align:center">选定文本块，移动光标键选定内容</td>
+</tr>
+<tr>
+<td style="text-align:left">$y$</td>
+<td style="text-align:center">复制选定块</td>
+</tr>
+<tr>
+<td style="text-align:left">$yy$</td>
+<td style="text-align:center">复制光标所在整行</td>
+</tr>
+<tr>
+<td style="text-align:left">$d$</td>
+<td style="text-align:center">剪切选定块</td>
+</tr>
+<tr>
+<td style="text-align:left">$dd$</td>
+<td style="text-align:center">剪切光标所在整行</td>
+</tr>
+<tr>
+<td style="text-align:left">$p$</td>
+<td style="text-align:center">粘贴至光标下</td>
+</tr>
+<tr>
+<td style="text-align:left">$P$</td>
+<td style="text-align:center">粘贴至光标上</td>
+</tr>
+</tbody>
+</table>
+<h2 id="查找与替换"><a href="#查找与替换" class="headerlink" title="查找与替换"></a>查找与替换</h2><table>
+<thead>
+<tr>
+<th style="text-align:left">快捷键</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">$:/word$</td>
+<td style="text-align:center">全文查找word。 按下:实际上是进入了Vim的命令模式。查找操作支持正则表达式。</td>
+</tr>
+<tr>
+<td style="text-align:left">$r + p$</td>
+<td style="text-align:center">将光标之后的字符替换为字母$p$</td>
+</tr>
+<tr>
+<td style="text-align:left">$:s/word/replace$</td>
+<td style="text-align:center">光标所在行的第一个word替换为$replace$</td>
+</tr>
+<tr>
+<td style="text-align:left">$:\%s/from/to/$</td>
+<td style="text-align:center">全文查找from并替换为to</td>
+</tr>
+<tr>
+<td style="text-align:left">$:1,50s/from/to/$</td>
+<td style="text-align:center">在第1行和第50行之间（含）进行搜索和替换</td>
+</tr>
+</tbody>
+</table>
+<h2 id="快速缩进"><a href="#快速缩进" class="headerlink" title="快速缩进"></a>快速缩进</h2><blockquote>
+<ul>
+<li>普通模式下输入15G，跳转到15行</li>
+<li>普通模式下输入&gt;&gt; 整行将向右缩进（使用，用于格式化代码超爽）</li>
+<li>普通模式下输入&lt;&lt; 整行向左回退</li>
+</ul>
+</blockquote>
+<h2 id="保存操作"><a href="#保存操作" class="headerlink" title="保存操作"></a>保存操作</h2><table>
+<thead>
+<tr>
+<th style="text-align:left">快捷键</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">$:q!$</td>
+<td style="text-align:center">强制退出，不保存</td>
+</tr>
+<tr>
+<td style="text-align:left">$:q$</td>
+<td style="text-align:center">退出</td>
+</tr>
+<tr>
+<td style="text-align:left">$:wq!$</td>
+<td style="text-align:center">强制保存并退出</td>
+</tr>
+<tr>
+<td style="text-align:left">$:w &lt;文件路径&gt;    $</td>
+<td style="text-align:center">另存为</td>
+</tr>
+<tr>
+<td style="text-align:left">$:saveas &lt;文件路径&gt;$</td>
+<td style="text-align:center">另存为</td>
+</tr>
+<tr>
+<td style="text-align:left">$:x$</td>
+<td style="text-align:center">保存并退出</td>
+</tr>
+<tr>
+<td style="text-align:left">$:wq$</td>
+<td style="text-align:center">保存并退出</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;vim常用快捷键整理&quot;&gt;&lt;a href=&quot;#vim常用快捷键整理&quot; class=&quot;headerlink&quot; title=&quot;vim常用快捷键整理&quot;&gt;&lt;/a&gt;vim常用快捷键整理&lt;/h1&gt;&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://zh.wikipedia.org/wiki/Vim&quot;&gt;Vim&lt;/a&gt;是从vi发展出来的一个文本编辑器。代码补完、编译及错误跳转等方便编程的功能特别丰富，在程序员中被广泛使用。和Emacs并列成为类Unix系统用户最喜欢的编辑器。&lt;br&gt;Vim的第一个版本由布莱姆·米勒在1991年发布。最初的简称是Vi IMitation，随着功能的不断增加，正式名称改成了Vi IMproved。现在是在开放源代码方式下发行的自由软件。。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;vim功能实在是太强大了本文只收录自己常用的一些命令，以助忘记。&lt;/p&gt;
+&lt;p&gt;vim常见有两种模式一种是Insert模式，该模式下可以像其它文本编辑器一样正常输入字符；&lt;br&gt;另一种是Normal模式，该模式下vim监听用户的按键可以对文本进行快速修改。&lt;br&gt;想要从Insert模式切换到Normal模式只需按下ESC键即可&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;打开文件&quot;&gt;&lt;a href=&quot;#打开文件&quot; class=&quot;headerlink&quot; title=&quot;打开文件&quot;&gt;&lt;/a&gt;打开文件&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;vim test.txt&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="Linux学习笔记" scheme="gadypu.top/categories/Linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="vim" scheme="gadypu.top/tags/vim/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2016/11/19/hello-world/"/>
-    <id>http://yoursite.com/2016/11/19/hello-world/</id>
-    <published>2016-11-19T02:33:54.906Z</published>
-    <updated>2016-11-19T02:33:54.902Z</updated>
+    <link href="gadypu.top/2016/11/19/hello-world/"/>
+    <id>gadypu.top/2016/11/19/hello-world/</id>
+    <published>2016-11-19T12:44:01.000Z</published>
+    <updated>2016-11-20T13:07:46.208Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h3 id="this-is-a-cpp-pragramm"><a href="#this-is-a-cpp-pragramm" class="headerlink" title="this is a cpp pragramm"></a>this is a cpp pragramm</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span> **argv)</span> </span>&#123;</div><div class="line">    <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"Hello World!"</span> &lt;&lt; <span class="string">'\n'</span>;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<a id="more"></a>
 <h3 id="This-is-a-mathematical-formula"><a href="#This-is-a-mathematical-formula" class="headerlink" title="This is a mathematical formula"></a>This is a mathematical formula</h3><p>$$ e^{ix} = cos{x} + isin{x}$$</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
@@ -37,9 +345,12 @@
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;this-is-a-cpp-pragramm&quot;&gt;&lt;a href=&quot;#this-is-a-cpp-pragramm&quot; class=&quot;headerlink&quot; title=&quot;this is a cpp pragramm&quot;&gt;&lt;/a&gt;this is a cpp pragramm&lt;/h3&gt;&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;bits/stdc++.h&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; argc, &lt;span class=&quot;keyword&quot;&gt;char&lt;/span&gt; **argv)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;std&lt;/span&gt;::&lt;span class=&quot;built_in&quot;&gt;cout&lt;/span&gt; &amp;lt;&amp;lt; &lt;span class=&quot;string&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt; &amp;lt;&amp;lt; &lt;span class=&quot;string&quot;&gt;&#39;\n&#39;&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
+    
+      <category term="others" scheme="gadypu.top/categories/others/"/>
     
     
   </entry>
