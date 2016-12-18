@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="gadypu.top/"/>
-  <updated>2016-11-20T13:05:44.596Z</updated>
+  <updated>2016-12-18T02:59:10.012Z</updated>
   <id>gadypu.top/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="gadypu.top/2016/11/20/vim-commands/"/>
     <id>gadypu.top/2016/11/20/vim-commands/</id>
     <published>2016-11-20T11:44:01.000Z</published>
-    <updated>2016-11-20T13:05:44.596Z</updated>
+    <updated>2016-12-18T02:59:10.012Z</updated>
     
     <content type="html"><![CDATA[<h1 id="vim常用快捷键整理"><a href="#vim常用快捷键整理" class="headerlink" title="vim常用快捷键整理"></a>vim常用快捷键整理</h1><hr>
 <blockquote>
@@ -166,6 +166,10 @@
 <tr>
 <td style="text-align:left">$d^{\wedge{}}$</td>
 <td style="text-align:center">删除至行首</td>
+</tr>
+<tr>
+<td style="text-align:left">$d0$</td>
+<td style="text-align:center">数字0，删除光标所在处，到该行的最前面一个字符</td>
 </tr>
 <tr>
 <td style="text-align:left">$dG$</td>
